@@ -1,8 +1,13 @@
 #Palindrome exercise using Python
 
-word = input("Enter a word: ")
+def palindrome(word):
+    if (word == word[::-1]):
+        res = print("Your word IS a palindrome\n")
+        return res
+    else:
+        res = print("Your word IS NOT a palindrome\n")
+        return res
 
-if word == word[::-1]:
-    print("Your word IS a palindrome\n")
-else:
-    print("Your word IS NOT a palindrome\n")
+if __name__ == "__main__":
+    word = input("Enter a word: ")
+    palindrome(word)
